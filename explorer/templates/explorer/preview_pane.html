@@ -32,7 +32,7 @@
                                     {% elif ql_id %}
                                       <a id="fullscreen" href="./?querylog_id={{ ql_id }}&fullscreen=1&rows={{ rows }}" target="_blank" title="Fullscreen results">
                                     {% endif %}
-                                        <i class="glyphicon glyphicon-resize-full"></i>
+                                      <i class="fas fa-expand"></i>
                                       </a></small>
                                   </span>
                                 </div>
@@ -52,7 +52,7 @@
                                           {% for h in headers %}
                                           <th>
                                             {% if h.summary %}
-                                              <i class="stats-expand glyphicon glyphicon-education"></i>
+                                              <i class="stats-expand fas fa-chalkboard"></i>
                                               <div class="stats-wrapper">
                                                   {% for label, value in h.summary.stats.items %}
                                                       <div class="stat-wrapper"><span class="stat-label">{{ label }}:&nbsp;</span><span class="stat-value">{{ value }}</span></div>
@@ -113,7 +113,7 @@
                                 <span class="panel-title">Pivot</span>
                               </div>
                               <div class="col-md-6 text-right">
-                                <small><a id="pivot-bookmark" data-baseurl="{% url "explorer_playground" %}?querylog_id={{ ql_id }}" href="#"><i class="glyphicon glyphicon-link"></i></a></small>
+                                <small><a id="pivot-bookmark" data-baseurl="{% url "explorer_playground" %}?querylog_id={{ ql_id }}" href="#"><i class="fas fa-link"></i></a></small>
                               </div>
                             </div>
                           </div>

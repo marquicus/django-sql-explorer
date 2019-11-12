@@ -11,6 +11,8 @@ from django.conf import settings
 EXPLORER_CONNECTIONS = getattr(settings, 'EXPLORER_CONNECTIONS', {})
 EXPLORER_DEFAULT_CONNECTION = getattr(settings, 'EXPLORER_DEFAULT_CONNECTION', None)
 
+EXPLORER_LOGIN_URL = getattr(settings, 'EXPLORER_LOGIN_URL', None)
+
 # Change the behavior of explorer
 EXPLORER_SQL_BLACKLIST = getattr(settings, 'EXPLORER_SQL_BLACKLIST', ('ALTER',
                                                                       'RENAME ',
@@ -69,3 +71,5 @@ S3_BUCKET = getattr(settings, "EXPLORER_S3_BUCKET", None)
 FROM_EMAIL = getattr(settings, 'EXPLORER_FROM_EMAIL', 'django-sql-explorer@example.com')
 
 UNSAFE_RENDERING = getattr(settings, "EXPLORER_UNSAFE_RENDERING", False)
+
+BASE_TEMPLATE = getattr(settings, 'EXPLORER_BASE_TEMPLATE', None)
